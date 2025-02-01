@@ -17,12 +17,13 @@ dataItems.forEach((elem) => {
     btnClear.addEventListener('click', () => formInput.value = '');
 })
 
-const btnSubmit = document.querySelector('.btn-submit');
-const checkBox = document.getElementById('agree');
-console.log('checkBox: ', checkBox);
+
+
+// form validation
+
+const form = document.querySelector('.form');
 
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('.form');
     const checkInput = document.querySelector('.check-input');
     const inputs = form.querySelectorAll('.form-input[required]');
 
@@ -43,4 +44,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     validateForm();
 });
+
+// popup
+
+const btnSubmit = document.querySelector('.btn-submit');
+const checkBox = document.getElementById('agree');
+const popupWrapper = document.querySelector('.popup-wrapper');
+const btnClose = popupWrapper.querySelector('.btn-close');
+const btnPopup = popupWrapper.querySelector('.btn-popup');
+const body = document.querySelector('body');
+
+btnSubmit.addEventListener('click', (e) => {
+    if(checkBox.checked) {
+    e.preventDefault()
+    popupWrapper.style.display = 'block';
+    body.style.overflow = 'hidden';
+    form.reset()
+    }
+})
+
+function close () {
+    popupWrapper.style.display = 'none';
+    body.style.overflow = 'auto';
+}
+    
+btnClose.addEventListener('click', close)
+btnPopup.addEventListener('click', close)
+
+
+
+
 
