@@ -87,7 +87,7 @@ function startDrag(event) {
   isDragging = true;
   startPos = (event.pageX || event.touches[0].pageX) - currentTranslate;
   cancelAnimationFrame(animationID);
-  carouselContainer.style.cursor = "grabbing";
+  // carouselContainer.style.cursor = "grabbing";
   carousel.style.transition = 'none'; // Убираем анимацию при перетаскивании
 }
 
@@ -95,7 +95,7 @@ function endDrag() {
   if (!isDragging) return;
   isDragging = false;
   prevTranslate = currentTranslate;
-  carouselContainer.style.cursor = "grab";
+  // carouselContainer.style.cursor = "grab";
   requestAnimationFrame(continuousScroll);
   carousel.style.transition = ''; // Возвращаем анимацию
 }
