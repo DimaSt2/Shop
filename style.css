@@ -28,8 +28,11 @@
 }
 
 .main {
+    max-width: 1920px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    /* border: 2px solid blue; */
 }
 
 .section {
@@ -39,6 +42,8 @@
     align-items: center;
     flex-direction: column;
     padding: 68px 130px;
+    /* border: 2px solid blue; */
+
 }
 
 .cards-section {
@@ -92,8 +97,8 @@
 }
 
 .cards{
-    /* width: 100%; */
-    width: 1660px;
+    width: 100%;
+    max-width: 1660px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -760,9 +765,9 @@
 
 /* form end */
 
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 440px) and (max-width: 1920px) {
 	
-
+    
 
 
 

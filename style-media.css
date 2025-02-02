@@ -1,0 +1,198 @@
+/* section media  */
+
+@media (min-width: 1400px) and (max-width: 1920px) {
+    .section {
+        padding: 48px 108px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+    .section {
+        padding: 48px 36px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+    .section {
+        padding: 24px 56px;
+    }
+}
+
+@media (max-width: 360px) {
+    .section {
+        padding: 20px 24px;
+    }
+}
+
+/* section media end */
+
+/* card media start */
+
+    /* for h2 */
+
+    @media (min-width: 1400px) and (max-width: 1920px) {
+        .h2 {
+            font-size: 24px;
+            line-height: 32px; /* 133.333% */
+        }
+    }
+
+    @media (min-width: 767px) and (max-width: 1400px) {
+        .h2 {
+            font-size: 18px;
+            line-height: 28px; /* 133.333% */
+        }
+    
+    }
+
+    /* for h2 end*/
+
+    /* for img */
+    /* @media (min-width: 1400px) and (max-width: 1920px) {
+        .card {
+            max-width: 224px;
+            gap: 8px;
+            border-radius: 12px;
+        }
+
+        .card-img {
+            width: 200px;
+            height: 140px;
+            font-size: 10px;
+            line-height: 12px;
+        }
+        
+        [data-bg='1'] {
+            background: url('./img/card1-1400.png') lightgray 50% / contain no-repeat;
+        }
+        
+        [data-bg='2'] {
+            background: url('./img/card2-1400.png') lightgray 50% / contain no-repeat;
+        }
+        
+        [data-bg='3'] {
+            background: url('./img/card3-1400.png') lightgray 50% / contain no-repeat;
+        }
+        
+        [data-bg='4'] {
+            background: url('./img/card4-1400.png') lightgray 50% / contain no-repeat;
+        }
+        
+        [data-bg='5'] {
+            background: url('./img/card5-1400.png') lightgray 50% / contain no-repeat;
+        }
+    } */
+
+
+    /* for card-img end*/
+    
+    
+    /* for  card-content*/
+
+@media (min-width: 100px) and (max-width: 1920px) {
+    .card-content {
+        font-size: 14px;
+        line-height: 20px; /* 150% */
+    }
+
+    .sticker {
+        font-size: 10px;
+        line-height: 12px; 
+    }
+
+    .price {
+        font-size: 16px;
+        line-height: 20px; /* 120% */
+    }
+
+    .price-old, 
+    .measure {
+        font-size: 12px;
+        line-height: 16px; /* 150% */
+    }
+}
+
+
+@media (min-width: 100px) and (max-width: 1024px) {
+    .sticker {
+        font-size: 8px;
+        line-height: 12px; 
+    }
+
+}
+
+
+/* card media end */
+
+/* form media start */
+
+@media (min-width: 100px) and (max-width: 1920px) {
+    .h3 {
+        font-size: 16px;
+        line-height: 24px; /* 140% */
+    }
+
+    .h3 + p, 
+    .form-input::placeholder, 
+    .btn {
+        font-size: 14px;
+        line-height: 20px; /* 150% */
+    }
+
+    .required {
+        font-size: 10px;
+        line-height: 12px; /* 133.333% */
+    }
+
+    .checkbox-title,
+    .link-agree  {
+        font-size: 14px;
+        line-height: 16px; /* 150% */
+    }
+
+    .btn-submit {
+        width: 200px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .h3 {
+        font-size: 14px;
+        line-height: 24px; /* 140% */
+    }
+
+    .user-data__items {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .form-submit {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .check-state, .check-input {
+        top: 0;
+    }
+}
+
+/* form media end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
