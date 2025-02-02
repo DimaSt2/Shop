@@ -8,14 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11.2.1/swiper-bundle.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body class="body">
     <main class="main">
       <section class="section cards-section">
-        <div class="cards">
+        <div id="carousel-container" class="carousel-container cards">
           <div class="cards-title">
             <h2 class="h2">Новые поступления</h2>
             <div class="arrows">
@@ -55,8 +54,8 @@
               </button>
             </div>
           </div>
-          <div class="cards-items">
-            <div class="card">
+          <div id="carousel" class="carousel cards-items">
+            <div class="card fix-height">
               <div class="card-img" data-bg="1">
                 
                 <div class="card-img__item">
@@ -151,7 +150,6 @@
                   <div class="price-old">1 494<span> ₽</span></div>
                 </div>
 
-                <button type="button" class="btn-busket add-to-busket"></button>
                 <div class="product-amount">
                   <button class="minus btn-amount" type="button">
                     <svg

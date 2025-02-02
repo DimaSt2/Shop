@@ -92,21 +92,19 @@
 }
 
 .cards{
-    width: 100%;
+    /* width: 100%; */
+    width: 1660px;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    /* border: 1px solid blue; */
+    overflow: hidden;
 }
 
 .cards-items{
    display: flex;
    justify-content: space-evenly;
    align-items: center;
-   flex-wrap: wrap;
    gap: 20px;
-   /* border: 1px solid green; */
-
 }
 
 .card {
@@ -119,6 +117,12 @@
     border-radius: 16px;
     background-color: var(--white);
     box-shadow: 0px 0px 10px 0px rgba(28, 45, 64, 0.05);
+}
+
+
+/* выравнивание - на макете высота 1-ой карточки 436px */
+.fix-height {
+    height: 440px;
 }
 
 .card-img {
@@ -755,3 +759,11 @@
 }
 
 /* form end */
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+	
+
+
+
+
+}
